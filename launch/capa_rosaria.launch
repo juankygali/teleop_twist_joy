@@ -1,0 +1,10 @@
+<launch>
+
+<node pkg="rosaria" type="RosAria" name="RosAria" />
+<!--
+<node pkg="joy" type="joy" name="joy_node" />
+<node pkg="robot_joy_control" type="teleop" name="teleop_node" />
+-->
+<include file="$(find teleop_twist_joy)/launch/teleop.launch" />
+
+</launch>
